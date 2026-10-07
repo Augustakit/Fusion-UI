@@ -10,10 +10,10 @@
         text-decoration: none;
         opacity: 0.8;
         transition: opacity 150ms ease-in-out;
-        color: #fff;
+        color: #fff; // 【按钮文字颜色】默认白色
         font-family: 'Blinker', 'Alibaba PuHuiTi';
         font-weight: 400;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.8); // 【按钮背景色】黑色 80% 透明
         align-items: center;
         display: flex;
 
@@ -32,7 +32,7 @@
         }
 
         &.primary {
-            border-color: #e14d43;
+            border-color: #e14d43; // 【主按钮边框色】红橙色
         }
     }
 }
