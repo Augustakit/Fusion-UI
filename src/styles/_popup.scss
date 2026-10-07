@@ -24,7 +24,7 @@
         font-weight: 300;
         font-size: 1.851851851851852vh; // 20px
         margin-bottom: 2.777777777777778vh; // 30px
-        opacity: 0.6;
+        opacity: 0.6; // 【弹窗正文透明度】让正文变淡
     }
 
     .btn {
@@ -48,7 +48,7 @@
     height: 100%;
     transform: translate(0%, 0%);
     backdrop-filter: blur(20px);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); // 【弹窗遮罩底色】黑色 50% 透明
     z-index: 999;
 }
 
@@ -64,7 +64,7 @@
     align-items: center;
     font-size: 16rem;
     line-height: 16rem;
-    color: #f57c00;
+    color: #f57c00; // 【大写锁定提示颜色】橙色
 
     svg {
         margin-right: 6rem;
