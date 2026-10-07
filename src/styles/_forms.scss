@@ -31,7 +31,7 @@ form {
         background: transparent;
         padding-top: 0;
         padding-bottom: 0;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6); // 【输入文字颜色】白色 60% 透明
         font-family: 'Blinker', 'Alibaba PuHuiTi';
         font-size: 16rem; // 16px
     }
@@ -49,7 +49,7 @@ form {
         position: absolute;
         left: 0;
         height: 6rem; // 6px
-        background: #e14d43;
+        background: #e14d43; // 【VOIP 音量条底色】红橙色
         border-radius: 6rem; // 6px
         transition: width 100ms ease-in-out;
         width: 0;
@@ -57,7 +57,7 @@ form {
 
         &.active {
             opacity: 0.8;
-            background: #19a719;
+            background: #19a719; // 【VOIP 激活时底色】绿色
         }
     }
 }
@@ -81,7 +81,7 @@ form {
 }
 
 .rc-slider-handle {
-    border-color: #fff;
+    border-color: #fff; // 【滑块圆点边框色】默认白色
     width: 18rem; // 18px
     height: 18rem; // 18px
     margin-top: -5rem; // -5px
@@ -94,7 +94,7 @@ form {
 
     &:hover,
     &:active {
-        border-color: #e14d43;
+        border-color: #e14d43; // 【滑块悬停/激活边框色】红橙色
         box-shadow: none;
     }
 }
@@ -106,9 +106,9 @@ form {
     min-width: 160rem;
     max-width: 360rem;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 2rem solid rgba(255, 255, 255, 0.25);
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15); // 【输入框底色】白色 15% 透明
+    border: 2rem solid rgba(255, 255, 255, 0.25); // 【输入框边框色】白色 25% 透明
+    color: #fff; // 【输入框文字颜色】默认白色
     font-family: 'Blinker', 'Alibaba PuHuiTi';
     --inputFontSize: 18rem;
 
@@ -133,7 +133,7 @@ form {
 
     &-placeholder {
         position: absolute;
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.3); // 【占位符文字颜色】白色 30% 透明
         font-weight: 400;
         font-family: 'Blinker', 'Alibaba PuHuiTi';
         font-size: var(--inputFontSize);
@@ -144,14 +144,14 @@ form {
         flex-grow: 1;
         flex-shrink: 1;
         width: 100%;
-        color: #fff;
+        color: #fff; // 【已选值文字颜色】默认白色
         font-weight: 400;
         font-family: 'Blinker', 'Alibaba PuHuiTi';
         font-size: var(--inputFontSize);
         line-height: var(--inputFontSize);
 
         &.placeholder {
-            color: rgba(255, 255, 255, 0.3);
+            color: rgba(255, 255, 255, 0.3); // 【占位符文字颜色】白色 30% 透明
         }
     }
 
@@ -162,7 +162,7 @@ form {
         background: transparent;
         border: 0;
         padding: 0;
-        color: #fff;
+        color: #fff; // 【输入文字颜色】默认白色
         font-family: 'Blinker', 'Alibaba PuHuiTi';
         font-size: var(--inputFontSize);
         line-height: var(--inputFontSize);
@@ -171,7 +171,7 @@ form {
     svg {
         width: 26rem;
         height: 26rem;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.8); // 【输入框内图标颜色】白色 80% 透明
     }
 
     &-dropdown {
@@ -180,7 +180,7 @@ form {
         left: 0;
         right: 0;
         border: 2rem solid rgba(255, 255, 255, 0.6);
-        background: #333;
+        background: #333; // 【下拉菜单底色】深灰色
         z-index: 1000;
         max-height: 400rem;
         overflow-y: auto;
@@ -200,15 +200,15 @@ form {
             svg {
                 width: 20rem;
                 height: 20rem;
-                color: rgba(255, 255, 255, 0.6);
+                color: rgba(255, 255, 255, 0.6); // 【下拉项图标颜色】白色 60% 透明
             }
 
             &:hover {
-                background: #444;
+                background: #444; // 【下拉项悬停底色】较亮灰色
             }
 
             &.selected {
-                background: #555;
+                background: #555; // 【下拉项选中底色】更亮灰色
             }
         }
     }
