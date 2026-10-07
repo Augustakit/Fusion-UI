@@ -6,8 +6,8 @@
 $color-console-red: #da857b;
 $color-console-blue: #61d2ff;
 $color-console-yellow: #ffe835;
-$color-accent-red: #e14d43;
-$color-error-red: rgba(255, 0, 0, 0.8);
+$color-accent-red: #e14d43; // 【全局强调色变量】红橙色，改这里可换主色调
+$color-error-red: rgba(255, 0, 0, 0.8); // 【错误提示色变量】红色
 
 * {
     user-select: none;
@@ -26,9 +26,9 @@ html {
 
 body,
 html {
-    color: #fff;
-    font-family: 'Blinker', 'Alibaba PuHuiTi';
-    font-weight: 400;
+    color: #fff; // 【全局默认文字颜色】改这里影响所有未单独设置的文字
+    font-family: 'Blinker', 'Alibaba PuHuiTi'; // 【全局字体栈】英文 Blinker，中文兜底阿里普惠体
+    font-weight: 400; // 【全局字重】只用 400
     overflow: hidden;
     user-select: none;
 }
@@ -45,11 +45,11 @@ body {
 }
 
 svg {
-    fill: #fff;
+    fill: #fff; // 【全局 SVG 图标填充色】默认白色
 }
 
 a {
-    color: #fff;
+    color: #fff; // 【全局链接文字色】默认白色
 }
 
 #ui-app {
@@ -66,7 +66,7 @@ a {
     right: 0;
     bottom: 0;
     z-index: 0;
-    background: #000;
+    background: #000; // 【动态背景底色】黑色
 }
 
 #app-container {
@@ -82,7 +82,7 @@ a {
     &.has-blur {
         transform: translate(0%, 0%);
         backdrop-filter: blur(23px);
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.5); // 【弹窗时背景变暗】半透明黑遮罩
     }
 }
 
@@ -110,7 +110,7 @@ a {
     width: 40rem;
     height: 40rem;
     border: 3rem solid rgba(255, 255, 255, 0.2);
-    border-top-color: #fff;
+    border-top-color: #fff; // 【加载圈高亮色】默认白色
     animation: spin 1s infinite linear;
 
     /*
